@@ -1,0 +1,15 @@
+#if(__name__) == (__main__):
+
+(9,4,5,3,2,7)
+
+def bSort(self,n=None):
+    if (n==None):
+        return self.length()
+    else:
+        start=0
+        for x in n:
+            if x(n.index(start) > n.index(start+1)):
+                n.index(start)=xn.index(start+1)
+                n.index(start+1)=n.indes(start)
+            
+
