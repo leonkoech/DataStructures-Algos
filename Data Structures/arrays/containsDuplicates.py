@@ -25,5 +25,7 @@ class Solution():
         return False
 
 
-
-print(Solution().containsDuplicate([3,2,1]))
+# using set
+print(Solution().containsDuplicate([2,2,1]))
+# using hashmaps
+print(Solution().containsDuplicatehash([2,2,1]))

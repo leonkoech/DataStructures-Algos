@@ -6,7 +6,7 @@ class solution():
         # [0,2,3,4,0,3,1]
         # [2,3,4,0,3,1,0]
         # [2,3,4,3,1,0,0]
-        
+
         num=mylist.count(0)
         # O(n)
         for i in range(num):
@@ -16,3 +16,5 @@ class solution():
         return mylist
         
 print(solution().function([0,2,3,4,0,3,1,]))
+
+# time complexity O(n)
