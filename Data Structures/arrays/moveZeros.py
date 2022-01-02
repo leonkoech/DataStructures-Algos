@@ -18,3 +18,4 @@ class solution():
 print(solution().function([0,2,3,4,0,3,1,]))
 
 # time complexity O(n)
+# space complextity O(1)

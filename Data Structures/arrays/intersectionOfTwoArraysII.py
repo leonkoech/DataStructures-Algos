@@ -3,16 +3,19 @@
 # in any order.
 
 
-
-array = []
-array=list(map(int, input(" ").split(" ")))
-
-for i in range(len(array)):
-    max_index = i
-    for j in range(i+1, len(array)):
-        if array[j] > array[max_index]:
-            max_index = j
-    array[i],array[max_index] = array[max_index],array[i]
-    
-    print(array)
+from typing import List
+class Solution:
+    def intersect(self, nums1: List[int], nums2: List[int]) -> List[int]:
+        count={}
+        ans=[]
+        
+        for i in nums1:
+            count[i]=count.get(i,0) + 1
+        
+        for b in nums2:
+            if b in count and count[b] > 0:
+                ans.append(b)
+                count[b] -= 1
+        return ans
+  
 
