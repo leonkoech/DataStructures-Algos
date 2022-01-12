@@ -5,9 +5,7 @@
 #  <- <- <- <-
 # driver code to switch the pointers
 
-# singly linked list solution
-def switch(current,prev):
-    current.next=prev
+
 
 def singlyLinkedListSolution(self,listo):
     if listo.head is None:
