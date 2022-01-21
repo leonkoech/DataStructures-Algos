@@ -1,4 +1,5 @@
 # this is a function to join two linked lists
+# Given the head of a singly linked list, return true if it is a palindrome.
 
 # this is not in place 
 def joinUs(self,list1,list2):

@@ -7,13 +7,22 @@ class solution():
         # [2,3,4,0,3,1,0]
         # [2,3,4,3,1,0,0]
 
-        num=mylist.count(0)
-        # O(n)
-        for i in range(num):
-            # O(k)
-            mylist.remove(0)
-            mylist.append(0)
+        # num=mylist.count(0)
+        # # O(n)
+        # for i in range(num):
+        #     # O(k)
+        #     mylist.remove(0)
+        #     mylist.append(0)
+        # return mylist
+        p1=0
+        for fast in range(len(mylist)):
+            if mylist[p1]==0:
+                mylist[p1] = mylist[fast]
+                p1+=1
+            else:
+                p1+=1
         return mylist
+
         
 print(solution().function([0,2,3,4,0,3,1,]))
 
