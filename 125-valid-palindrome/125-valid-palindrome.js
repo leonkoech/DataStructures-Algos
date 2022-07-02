@@ -3,7 +3,8 @@
  * @return {boolean}
  */
 var isPalindrome = function(s) {
-    s = s.replace(/[^a-zA-Z0-9]/g, "").replace(/\s+/g,"").toLowerCase()
+    if (s.length == 1){ return true }
+    s = s.replace(/[^a-zA-Z0-9]/g, "").toLowerCase()
     var p1 = 0;
     var p2 = s.length-1
     while (p1<=p2){
